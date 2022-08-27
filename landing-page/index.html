@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Landing Page</title>
+        <link rel="stylesheet" href="./styles.css" />
+        <script>
+            window.onscroll = function () {
+                scrollFunction();
+            };
+
+            function scrollFunction() {
+                if (
+                    document.body.scrollTop > 20 ||
+                    document.documentElement.scrollTop > 20
+                ) {
+                    document.getElementById("nav-bar").style.top = "0";
+                } else {
+                    document.getElementById("nav-bar").style.top = "-50px";
+                }
+            }
+        </script>
+    </head>
+
+    <body>
+        <main id="root">
+            <header id="header">
+                <nav id="nav-bar">
+                    <a class="nav-link" href="#prologue"> Reading </a>
+                    <a class="nav-link" href="#signup"> Sign Up </a>
+                    <a class="nav-link" href="#copyrights"> Copyrights </a>
+                </nav>
+                <div class="brand" id="brand">
+                    <img
+                        src="https://img.icons8.com/color/96/000000/fire-element--v2.png"
+                        id="header-img"
+                        alt="flame"
+                    />
+                    <h1>Kvothe</h1>
+                </div>
+            </header>
+            <div id="wrapper">
+                <figure id="prologue">
+                    <iframe
+                        id="video"
+                        width="617"
+                        height="347"
+                        src="https://www.youtube.com/embed/aDJy9Ukdsl8?list=PLzoj4qBBhfpPiz9zvmi2fppjNDwU93bxg"
+                        title="The Name of the Wind by Patrick Rothfuss - Prologue"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                    ></iframe>
+                    <figcaption>Prologue Reading</figcaption>
+                </figure>
+                <section id="signup">
+                    <div class="signup">
+                        <h2>Sign Up</h2>
+                        <form
+                            id="form"
+                            action="https://www.freecodecamp.com/email-submit"
+                        >
+                            <div class="input-group">
+                                <label for="email">Email</label>
+                                <input
+                                    id="email"
+                                    name="email"
+                                    type="email"
+                                    placeholder="example@gmail.com"
+                                />
+                            </div>
+                            <input type="submit" id="submit" value="Submit">
+                        </form>
+                    </div>
+                </section>
+            </div>
+            <footer id="copyrights">
+                <a
+                    target="_blank"
+                    href="https://icons8.com/icon/houGsYyNpCbu/fire"
+                    >Fire icon by Icons8</a
+                >
+            </footer>
+        </main>
+    </body>
+</html>

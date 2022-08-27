@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,200&display=swap');
+
+#root{
+    --brand: #7d4cdb;
+
+
+    --accent-1: #6fffb0;
+    --accent-2: #fd6fff;
+    --accent-3: #81fced;
+    --accent-4: #ffca58;
+
+    --neutral-1: #00873d;
+    --neutral-2: #3d138d;
+    --neutral-3: #00739d;
+    --neutral-4: #a2423d;
+
+    --status-critical: #ff4040;
+    --status-error: #ff4040;
+    --status-warning: #ffaa15;
+    --status-ok: #00c781;
+    --status-unknown: #cccccc;
+    --status-disabled: #cccccc;
+
+    --light-1: #f8f8f8;
+    --light-2: #f2f2f2;
+    --light-3: #ededed;
+    --light-4: #dadada;
+    --light-5: #dadada;
+    --light-6: #dadada;
+
+    --dark-1: #333333;
+    --dark-2: #555555;
+    --dark-3: #777777;
+    --dark-4: #999999;
+    --dark-5: #999999;
+    --dark-6: #999999;
+
+    --paper-shadow: 0px 1px 5px 0px var(--dark-1);
+    --border-elevated: 4px solid var(--neutral-2);
+    font-family: 'Poppins', sans-serif;
+    color: var(--light-3);
+
+    background-color: var(--neutral-2);
+
+}
+body{
+    margin: 0;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    max-width: 100vw;
+    align-items: center;
+}
+form{
+    min-width: 80vw;
+    display: flex;
+    flex-direction: column;
+    box-shadow: var(--paper-shadow);
+    padding: 1.5em;
+    border-radius: 30px;
+    background-color: var(--dark-1);
+    border-bottom: var(--border-elevated);
+    border-bottom-color: #222;
+
+}
+label{
+    display: flex;
+    flex-direction: column;
+    padding: 0.4em 0;
+    justify-content: space-evenly;
+    min-height:fit-content;
+}
+div{
+    display: flex;
+    flex-direction: column;
+    padding: 0.4em;
+}
+.grp{
+    display: inline-flex;
+    flex-direction: row;
+}
+input, select, button{
+    padding: 0.5em;
+    border-radius: 10px;
+    border: unset;
+    box-shadow: var(--paper-shadow);
+}
+h1{
+    color: var(--brand);
+}
+#submit{
+    background-color: var(--brand);
+    color: var(--light-1);
+    font-weight: bold;
+    border-bottom: var(--border-elevated);
+}
+#submit:active{
+    border-bottom: unset;
+    background-color: var(--neutral-2);
+}
+#submit:hover{
+    background-color: #9d73ea;
+}
