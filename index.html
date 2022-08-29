@@ -3,25 +3,177 @@
     <head>
         <title>Responsive Web Design Projects</title>
         <meta charset="UTF-8" />
-        <link rel="stylesheet" href="./styles.css" />
+        <meta
+            name="description"
+            content="A personal portfolio for responsive web design projects in the FreeCodeCamp certificate"
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./styles.tailwind.css" />
     </head>
-    <body>
-        <main>
-            <header>
-                <h1>Responsive Web Design Projects</h1>
-                <p>FreeCodeCamp Projects</p>
+    <body class="container">
+        <main class="container">
+            <header
+                class="w-full container p-3 bg-purple-800 shadow-2xl sticky top-0"
+            >
+                <h1 class="text-2xl font-bold text-center text-green-300">
+                    Responsive Web Design Projects
+                </h1>
+                <p class="text-center text-green-200">FreeCodeCamp Projects</p>
             </header>
-            <article>
-                <section>
-                    <ul>
-                        <li><a href="./survey-form/index.html">Survey Form</a></li>
-                        <li><a href="./tribute-page/index.html">Tribute Page</a></li>
-                        <li><a href="./doc-page/index.html">Technical Documantation Page</a></li>
-                        <li><a href="./landing-page/index.html">Landing Page</a></li>
+            <article class="container m-5">
+                <section id="welcome-section" class="container h-full">
+                    <h1>Welcome to my Responsive Web Design Portfolio</h1>
+                    <div class="contacts">
+                        <ul
+                            class="container shadow-md flex flex-wrap justify-between rounded-md"
+                        >
+                            <li>
+                                <a
+                                    target="_blank"
+                                    referrerpolicy="noreferror"
+                                    href="https://github.com/moharamfatema"
+                                    class="w-1/3 hover:font-bold"
+                                    id="profile-link"
+                                >
+                                    Take a look at my other projects!
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    target="_blank"
+                                    referrerpolicy="noreferror"
+                                    href="mailto:moharamfatema@gmail.com"
+                                    class="w-1/3 hover:font-bold"
+                                >
+                                    Send me an e-mail
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    target="_blank"
+                                    referrerpolicy="noreferror"
+                                    href="https://www.linkedin.com/in/fatema-moharam-461830213/"
+                                    class="w-1/3 hover:font-bold"
+                                >
+                                    Visit my LinkedIn profile
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="container" id="projects">
+                    <ul class="container flex flex-wrap justify-evenly w-100 ">
+                        <li>
+                            <div class="shadow-md rounded-md p-3 w-100 project">
+                                <a
+                                    target="_blank"
+                                    referrerpolicy="noreferror"
+                                    href="./survey-form/index.html"
+                                    class="w-100"
+                                >
+                                    <h2
+                                        class="text-xl font-bold text-center project-title"
+                                    >
+                                        Survey Form Page
+                                    </h2>
+                                    <img
+                                        src="./survey-form/screenshot.png"
+                                        alt="screenshot of survey page"
+                                        class="preview"
+                                    />
+                                    <p class="text-center">
+                                        Survey form with multiple input types
+                                    </p></a
+                                >
+                            </div>
+                        </li>
+                        <li>
+                            <div class="shadow-md rounded-md p-3 project">
+                                <a
+                                    target="_blank"
+                                    referrerpolicy="noreferror"
+                                    href="./tribute-page/index.html"
+                                >
+                                    <h2
+                                        class="text-xl font-bold text-center project-title"
+                                    >
+                                        Tribute Page
+                                    </h2>
+                                    <img
+                                        src="./tribute-page/screenshot.png"
+                                        alt="screenshot of tribute page"
+                                        class="preview"
+                                    />
+                                    <p class="text-center">
+                                        One paragraph about Al Hassan Ibn Al
+                                        Haytham
+                                    </p></a
+                                >
+                            </div>
+                        </li>
+                        <li>
+                            <div class="shadow-md rounded-md p-3 project">
+                                <a
+                                    target="_blank"
+                                    referrerpolicy="noreferror"
+                                    href="./doc-page/index.html"
+                                >
+                                    <h2
+                                        class="text-xl font-bold text-center project-title"
+                                    >
+                                        Technical Documentation
+                                    </h2>
+                                    <img
+                                        src="./doc-page/screenshot.png"
+                                        alt="screenshot of doc page"
+                                        class="preview"
+                                    />
+                                    <p class="text-center">
+                                        A dummy-text documentation page
+                                    </p>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="project shadow-md rounded-md p-3">
+                                <a
+                                    target="_blank"
+                                    referrerpolicy="noreferror"
+                                    href="./landing-page/index.html"
+                                >
+                                    <h2
+                                        class="text-xl font-bold project-title text-center"
+                                    >
+                                        Landing Page
+                                    </h2>
+                                    <img
+                                        src="./landing-page/screenshot.png"
+                                        alt="screenshot of landing page"
+                                        class="preview"
+                                    />
+                                    <p>
+                                        Prologue reading of
+                                        <strong>The Name Of The Wind</strong
+                                        ><br />
+                                        by Patrick Rothfuss
+                                    </p>
+                                </a>
+                            </div>
+                        </li>
                     </ul>
                 </section>
             </article>
-            <footer></footer>
+            <footer>
+                <div class="github repo">
+                    <a
+                        target="_blank"
+                        referrerpolicy="noreferror"
+                        href="https://github.com/moharamfatema/responsive-web-design"
+                    >
+                        View Source Code
+                    </a>
+                </div>
+            </footer>
         </main>
     </body>
 </html>

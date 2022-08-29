@@ -1,82 +1,118 @@
 <!DOCTYPE HTML5>
 <html lang="en">
+    <head>
+        <title>Survey Form</title>
+        <link rel="stylesheet" href="./styles.css" />
+    </head>
 
-<head>
-    <title>Survey Form</title>
-    <link rel="stylesheet" href="./styles.css" />
-</head>
+    <body>
+        <div id="root">
+            <div class="content">
+                <header>
+                    <h1 id="title">Sample Survey Form</h1>
+                    <p id="description">
+                        Building a simple html page with forms
+                    </p>
+                </header>
+                <form id="survey-form">
+                    <label id="name-label">
+                        Name
+                        <input
+                            type="text"
+                            id="name"
+                            placeholder="John Doe"
+                            required
+                        />
+                    </label>
+                    <label id="email-label">
+                        Email
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="example@gmail.com"
+                            required
+                        />
+                    </label>
+                    <label id="number-label">
+                        Age
+                        <input
+                            type="number"
+                            id="number"
+                            min="3"
+                            max="500"
+                            placeholder="22"
+                        />
+                    </label>
 
-<body>
-    <div id='root'>
-        <div class='content'>
-            <header>
-                <h1 id='title'>
-                    Sample Survey Form
-                </h1>
-                <p id='description'>
-                    Building a simple html page with forms
-                </p>
-            </header>
-            <form id="survey-form">
-                <label id="name-label">
-                    Name
-                    <input type="text" id="name" placeholder="John Doe" required />
-                </label>
-                <label id="email-label">
-                    Email
-                    <input type="email" id="email" placeholder="example@gmail.com" required />
-                </label>
-                <label id="number-label">
-                    Age
-                    <input type="number" id="number" min="3" max="500" placeholder="22" />
-                </label>
-
-                <label>
-                    Choose your highest level of education
-                    <select name="education" id="dropdown">
-                        <option value="highschool">Highschool Diploma</option>
-                        <option value="bachelor">Bachelor's Degree</option>
-                        <option value="masters">Master's Degree</option>
-                        <option value="phd">PhD</option>
-                    </select>
-                </label>
-                <div class="radio">
-                    <div class="grp">
-                        <input type="radio" name="gender" value="male" id="male">
-                        <label for="male">Male</label>
+                    <label>
+                        Choose your highest level of education
+                        <select name="education" id="dropdown">
+                            <option value="highschool">
+                                Highschool Diploma
+                            </option>
+                            <option value="bachelor">Bachelor's Degree</option>
+                            <option value="masters">Master's Degree</option>
+                            <option value="phd">PhD</option>
+                        </select>
+                    </label>
+                    <div class="radio">
+                        <div class="grp">
+                            <input
+                                type="radio"
+                                name="gender"
+                                value="male"
+                                id="male"
+                            />
+                            <label for="male">Male</label>
+                        </div>
+                        <div class="grp">
+                            <input
+                                type="radio"
+                                name="gender"
+                                value="female"
+                                id="female"
+                            />
+                            <label for="male">Female</label>
+                        </div>
                     </div>
-                    <div class="grp">
-                        <input type="radio" name="gender" value="female" id="female">
-                        <label for="male">Female</label>
+                    <div class="check">
+                        Select the fields that interest you
+                        <div class="grp">
+                            <input
+                                type="checkbox"
+                                name="field1"
+                                value="comp-sci"
+                            />
+                            <label for="field1">Computer Science</label>
+                        </div>
+                        <div class="grp">
+                            <input type="checkbox" name="field2" value="eng" />
+                            <label for="field2">Engieering</label>
+                        </div>
+                        <div class="grp">
+                            <input
+                                type="checkbox"
+                                name="field3"
+                                value="psychology"
+                            />
+                            <label for="field3">psychology</label>
+                        </div>
+                        <div class="grp">
+                            <input
+                                type="checkbox"
+                                name="field4"
+                                value="philosophy"
+                            />
+                            <label for="field4">Philosophy</label>
+                        </div>
                     </div>
-                </div>
-                <div class="check">
-                    Select the fields that interest you
-                    <div class="grp">
-                        <input type="checkbox" name="field1" value="comp-sci">
-                        <label for="field1">Computer Science</label>
-                    </div>
-                    <div class="grp">
-                        <input type="checkbox" name="field2" value="eng">
-                        <label for="field2">Engieering</label>
-                    </div>
-                    <div class="grp">
-                        <input type="checkbox" name="field3" value="psychology">
-                        <label for="field3">psychology</label>
-                    </div>
-                    <div class="grp">
-                        <input type="checkbox" name="field4" value="philosophy">
-                        <label for="field4">Philosophy</label>
-                    </div>
-                </div>
-                <label>
-                    Notes
-                    <textarea name="notes"></textarea>
-                </label>
-                <button id="submit" type="submit">Submit</button>
-            </form>
+                    <label>
+                        Notes
+                        <textarea name="notes"></textarea>
+                    </label>
+                    <button id="submit" type="submit">Submit</button>
+                </form>
+            </div>
         </div>
-    </div>
-</body>
-
+    </body>
 </html>
