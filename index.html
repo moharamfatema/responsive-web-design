@@ -9,62 +9,74 @@
         />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="./styles.tailwind.css" />
+        <script src="https://kit.fontawesome.com/43ff2915fb.js" crossorigin="anonymous"></script>
     </head>
-    <body class="container">
-        <main class="container">
-            <header
-                class="w-full container p-3 bg-purple-800 shadow-2xl sticky top-0"
-            >
-                <h1 class="text-2xl font-bold text-center text-green-300">
-                    Responsive Web Design Projects
-                </h1>
-                <p class="text-center text-green-200">FreeCodeCamp Projects</p>
+    <body  id="root">
+        <main >
+            <header class="w-full p-3 bg-purple-800 shadow-2xl">
+                <navbar
+                    id="navbar"
+                    class=" sticky top-0 z-10"
+                >
+                    <h1 class="text-2xl font-bold text-center text-green-300">
+                        <a href="#projects">Responsive Web Design Projects</a>
+                    </h1>
+                    <p class="text-center text-green-200">FreeCodeCamp Projects</p>
+                </navbar>
             </header>
-            <article class="container m-5">
-                <section id="welcome-section" class="container h-full">
-                    <h1>Welcome to my Responsive Web Design Portfolio</h1>
+            <article >
+                <section id="welcome-section" >
+                    <h1 class="jumbo">Welcome to my Responsive Web Design Portfolio</h1>
                     <div class="contacts">
                         <ul
-                            class="container shadow-md flex flex-wrap justify-between rounded-md"
+                            class=" shadow-md flex flex-wrap justify-between rounded-md flex-col"
                         >
-                            <li>
+                            <li class="contact">
                                 <a
                                     target="_blank"
                                     referrerpolicy="noreferror"
+                                    rel="noopener"
                                     href="https://github.com/moharamfatema"
-                                    class="w-1/3 hover:font-bold"
+                                    class="w-1/3  contact-link "
                                     id="profile-link"
                                 >
+                                <i class="fa-brands fa-github"></i>
                                     Take a look at my other projects!
                                 </a>
                             </li>
-                            <li>
+                            <li class="contact">
                                 <a
                                     target="_blank"
                                     referrerpolicy="noreferror"
+                                    rel="noopener"
+
                                     href="mailto:moharamfatema@gmail.com"
-                                    class="w-1/3 hover:font-bold"
+                                    class="w-1/3 contact-link "
                                 >
+                                <i class="fa-solid fa-envelope"></i>
                                     Send me an e-mail
                                 </a>
                             </li>
-                            <li>
+                            <li class="contact">
                                 <a
                                     target="_blank"
                                     referrerpolicy="noreferror"
+                                    rel="noopener"
+
                                     href="https://www.linkedin.com/in/fatema-moharam-461830213/"
-                                    class="w-1/3 hover:font-bold"
+                                    class="w-1/3 contact-link "
                                 >
+                                <i class="fa-brands fa-linkedin"></i>
                                     Visit my LinkedIn profile
                                 </a>
                             </li>
                         </ul>
                     </div>
                 </section>
-                <section class="container" id="projects">
-                    <ul class="container flex flex-wrap justify-evenly w-100 ">
+                <section  id="projects">
+                    <ul class=" plist">
                         <li>
-                            <div class="shadow-md rounded-md p-3 w-100 project">
+                            <div class="shadow-md rounded-md p-3 w-100 project project-tile">
                                 <a
                                     target="_blank"
                                     referrerpolicy="noreferror"
@@ -88,7 +100,7 @@
                             </div>
                         </li>
                         <li>
-                            <div class="shadow-md rounded-md p-3 project">
+                            <div class="shadow-md rounded-md p-3 project project-tile" >
                                 <a
                                     target="_blank"
                                     referrerpolicy="noreferror"
@@ -112,7 +124,7 @@
                             </div>
                         </li>
                         <li>
-                            <div class="shadow-md rounded-md p-3 project">
+                            <div class="shadow-md rounded-md p-3 project project-tile">
                                 <a
                                     target="_blank"
                                     referrerpolicy="noreferror"
@@ -135,7 +147,7 @@
                             </div>
                         </li>
                         <li>
-                            <div class="project shadow-md rounded-md p-3">
+                            <div class="project shadow-md rounded-md p-3 project-tile">
                                 <a
                                     target="_blank"
                                     referrerpolicy="noreferror"
@@ -164,12 +176,15 @@
                 </section>
             </article>
             <footer>
-                <div class="github repo">
+                <div class="github repo ">
                     <a
+                    rel="noopener"
+
                         target="_blank"
                         referrerpolicy="noreferror"
                         href="https://github.com/moharamfatema/responsive-web-design"
-                    >
+                        class="text-center"
+                    ><i class="fa-brands fa-github"></i>
                         View Source Code
                     </a>
                 </div>
